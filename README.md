@@ -396,6 +396,14 @@ It will get installed in the `venv` folder, and not conflict with other projects
 
 As mentioned earlier, I like to install big packages (like Numpy), or packages I always use (like IPython) globally. All the rest I install in a virtualenv.
 
+### virtualenvwrapper
+
+```
+    $ sudo pip install virtualenvwrapper
+    $ echo 'source /usr/local/bin/virtualenvwrapper.sh' >> ~/.bashrc
+    $ source ~/.bashrc
+```
+
 ## IPython
 
 [IPython](http://ipython.org/) is an awesome project which provides a much better Python shell than the one you get from running `$ python` in the command-line. It has many cool functions (running Unix commands from the Python shell, easy copy & paste, creating Matplotlib charts in-line, etc.) and I'll let you refer to the [documentation](http://ipython.org/ipython-doc/stable/index.html) to discover them.
