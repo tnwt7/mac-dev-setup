@@ -30,6 +30,7 @@ If you have any comments or suggestions, feel free to give me a shout [on Twitte
 - [Elasticsearch](#elasticsearch)
 - [Projects folder](#projects-folder)
 - [Apps](#apps)
+- [Zshell](#zshell)
 
 ## System update
 
@@ -826,6 +827,33 @@ $ curl -XGET 'http://localhost:9200/'
 If you installed the elasticsearch-head plugin, you can visit its interface at `http://localhost:9200/_plugin/head/`.
 
 Elasticsearch's [documentation](http://www.elasticsearch.org/guide/) is more of a reference. To get started, I suggest reading some of the blog posts linked on this [StackOverflow answer](http://stackoverflow.com/questions/11593035/beginners-guide-to-elasticsearch/11767610#11767610).
+
+## Zshell
+
+### Install
+
+```bash
+curl -L github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+```
+### Agnoster Mod Theme
+This is my favourite theme. You can see screenshot [here](https://gist.github.com/smileart/3750104).
+
+#### Use Agnoster Mod Theme
+Download [theme file](https://gist.github.com/smileart/3750104#file-agnoster-zsh-theme) to your .oh-my-zsh directory.
+
+Change `.zshrc` content:
+```
+ZSH_THEME="agnoster-mod"
+```
+Reload your `.zshrc`
+```bash
+source ~/.zshrc
+```
+
+### References
+[Agnoster Mod](https://gist.github.com/smileart/3750104) A ZSH theme optimized for people who use: Solarized, Git, Unicode-compatible fonts and terminals
+
+To use Agnoster theme you need to install [this Powerline font](https://gist.github.com/qrush/1595572)
 
 ## Projects folder
 
