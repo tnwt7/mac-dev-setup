@@ -31,6 +31,7 @@ If you have any comments or suggestions, feel free to give me a shout [on Twitte
 - [Projects folder](#projects-folder)
 - [Apps](#apps)
 - [Zshell](#zshell)
+- [tmux](#tmux)
 
 ## System update
 
@@ -870,6 +871,12 @@ source ~/.zshrc
 [Agnoster Mod](https://gist.github.com/smileart/3750104) A ZSH theme optimized for people who use: Solarized, Git, Unicode-compatible fonts and terminals
 
 To use Agnoster theme you need to install [this Powerline font](https://gist.github.com/qrush/1595572)
+
+## tmux
+### Install using Homebrew
+```bash
+brew install tmux
+```
 
 ## Projects folder
 
