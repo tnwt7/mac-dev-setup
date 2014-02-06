@@ -14,6 +14,7 @@ If you have any comments or suggestions, feel free to give me a shout [on Twitte
 - [Consolas](#consolas)
 - [Beautiful terminal](#beautiful-terminal)
 - [Git](#git)
+- [Mercurial](#mercurial)
 - [Sublime Text](#sublime-text)
 - [Vim](#vim)
 - [Python](#python)
@@ -208,6 +209,12 @@ To push code to your GitHub repositories, we're going to use the recommended HTT
     $ git config --global credential.helper osxkeychain
     
 **Note**: On a Mac, it is important to remember to add `.DS_Store` (a hidden OS X system file that's put in folders) to your `.gitignore` files. You can take a look at this repository's [.gitignore](/nicolahery/mac-dev-setup/blob/master/.gitignore) file for inspiration.
+
+## Mercurial
+
+Mercurial is a free, distributed source control management tool. It efficiently handles projects of any size and offers an easy and intuitive interface.
+
+Download [here](http://mercurial.selenic.com/downloads/)
     
 ## Sublime Text
 
@@ -312,6 +319,16 @@ And finally, install the Vim "sensible defaults" by running:
     $ git clone git://github.com/tpope/vim-sensible.git
 
 With that, Vim will look a lot better next time you open it!
+
+### Install from source
+
+You can download lastest version [here](http://www.vim.org/sources.php)
+
+Extract it and go inside source directory, then run:
+```bash
+$ ./configure --with-features=big && make
+$ sudo make install
+```
 
 ## Python
 
