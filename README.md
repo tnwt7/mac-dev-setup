@@ -509,7 +509,23 @@ You can find the MySQL Workbench download [here](http://www.mysql.com/downloads/
 
 ## Node.js
 
-Install [Node.js](http://nodejs.org/) with Homebrew:
+### Install via NVM
+Node Version Manager - Simple bash script to manage multiple active node.js versions
+
+Github: [https://github.com/creationix/nvm](https://github.com/creationix/nvm)
+
+#### Install NVM
+Run this script:
+```bash
+curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+```
+#### Install Node.js
+```bash
+nvm install v0.10.xx
+```
+
+
+### Install [Node.js](http://nodejs.org/) with Homebrew:
 
     $ brew update
     $ brew install node
