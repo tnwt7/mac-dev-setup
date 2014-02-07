@@ -26,14 +26,18 @@ function _git_info() {
 }
 
 function virtualenv_info {
-    [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
+    if [ $VIRTUAL_ENV ]; then
+      echo '%{%F{green}%}('`basename $VIRTUAL_ENV`') %{%F{black}%}'
+    else
+      echo '%{%F{black}%}'
+    fi
 }
 
-PROMPT_HOST='%{%b%F{gray}%K{black}%} %(?.%{%F{green}%}✔.%{%F{red}%}✘)%{%F{yellow}%} %n %{%F{white}%}on %{%F{yellow}%}%M %{%F{black}%}'
+PROMPT_HOST='%{%b%F{gray}%K{black}%} %(?.%{%F{green}%}✔.%{%F{red}%}✘)%{%F{yellow}%} %n %{%F{white}%}on %{%F{yellow}%}%M '
 PROMPT_DIR='%{%F{white}%} %~%  '
 PROMPT_SU='%(!.%{%k%F{blue}%K{black}%}⮀%{%F{yellow}%} ⚡ %{%k%F{black}%}.%{%k%F{blue}%})⮀%{%f%k%b%}'
 
-PROMPT='%{%f%b%k%}$PROMPT_HOST$(_git_info)$PROMPT_DIR$PROMPT_SU
+PROMPT='%{%f%b%k%}$PROMPT_HOST$(virtualenv_info)$(_git_info)$PROMPT_DIR$PROMPT_SU
 %{%F{green}%}$ '
 RPROMPT='%{$fg[green]%}[%*]%{$reset_color%}'
 
