@@ -331,6 +331,11 @@ $ sudo make install
 ```
 A --with-features=big is easiest way to make Vim support unicode.
 
+For **Mavericks** users, you may face this error:
+```os_unix.c:830:46: warning: declaration of 'struct sigaltstack' will not be visible outside of this function [-Wvisibility]```
+
+To fix it, you need [this hg patch file](https://groups.google.com/group/vim_dev/attach/9914724d1a433ae4/patch.diff?part=2&authuser=0). Just import it to repository and build again. Take a look at (this thread)[https://groups.google.com/forum/#!msg/vim_dev/uiD_S91FPb0/JrO1V7x8XggJ]
+
 ## Python
 
 OS X, like Linux, ships with [Python](http://python.org/) already installed. But you don't want to mess with the system Python (some system tools rely on it, etc.), so we'll install our own version with Homebrew. It will also allow us to get the very latest version of Python 2.7.
