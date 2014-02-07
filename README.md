@@ -329,6 +329,7 @@ Extract it and go inside source directory, then run:
 $ ./configure --with-features=big && make
 $ sudo make install
 ```
+A --with-features=big is easiest way to make Vim support unicode.
 
 ## Python
 
