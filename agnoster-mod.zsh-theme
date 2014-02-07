@@ -33,7 +33,7 @@ function virtualenv_info {
     fi
 }
 
-PROMPT_HOST='%{%b%F{gray}%K{black}%} %(?.%{%F{green}%}✔.%{%F{red}%}✘)%{%F{yellow}%} %n %{%F{white}%}on %{%F{yellow}%}%M '
+PROMPT_HOST='%{%b%F{gray}%K{black}%} %(?.%{%F{green}%}✔.%{%F{red}%}✘)%{%F{yellow}%} %n%{%F{white}%}@%{%F{yellow}%}%M '
 PROMPT_DIR='%{%F{white}%} %~%  '
 PROMPT_SU='%(!.%{%k%F{blue}%K{black}%}⮀%{%F{yellow}%} ⚡ %{%k%F{black}%}.%{%k%F{blue}%})⮀%{%f%k%b%}'
 
