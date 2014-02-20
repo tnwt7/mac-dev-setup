@@ -1,0 +1,15 @@
+# ~/.tmuxinator/eidos-update.yml
+
+name: eidos-update
+root: ~/eidos/src
+
+windows:
+  - server:
+      layout: main-vertical
+      panes:
+        - cd application && git pull origin master && workon eidos_app && python manage.py test
+        - cd auth && git pull origin master && workon eidos_auth && python manage.py test
+        - cd kanban && git pull origin master && workon eidos_kanban && python manage.py test
+        - cd project && git pull origin master && workon eidos_project && python manage.py test
+        - cd story && git pull origin master && workon eidos_story && python manage.py test
+        - cd eidos_event && git pull origin master && workon eidos_event && python manage.py test
