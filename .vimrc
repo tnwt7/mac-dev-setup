@@ -8,6 +8,7 @@ Plug 'othree/yajs.vim'
 Plug 'groenewege/vim-less'
 Plug 'mxw/vim-jsx'
 Plug 'keith/swift.vim'
+Plug 'pangloss/vim-javascript'
 
 call plug#end()
 
@@ -16,9 +17,9 @@ let g:jsx_ext_required = 0
 set autoindent
 set expandtab
 set shiftround
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
 
 set colorcolumn=80
 set nowrap
